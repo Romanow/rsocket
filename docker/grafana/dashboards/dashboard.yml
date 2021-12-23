@@ -1,0 +1,12 @@
+apiVersion: 1
+
+providers:
+  - name: 'Spring Boot Statistics'
+    type: file
+    options:
+      path: /etc/grafana/provisioning/dashboards/dashboards/spring-boot-2-1.json
+
+  - name: 'K6 Load Testing Result'
+    type: file
+    options:
+      path: /etc/grafana/provisioning/dashboards/dashboards/k6-load-testing-results.json

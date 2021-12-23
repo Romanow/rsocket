@@ -1,0 +1,15 @@
+global:
+  scrape_interval: 5s
+  external_labels:
+    monitor: 'services-monitor'
+
+scrape_configs:
+  - job_name: 'Api Service'
+    metrics_path: '/manage/prometheus'
+    static_configs:
+      - targets: ['host.docker.internal:8080']
+
+  - job_name: 'Poem Generator'
+    metrics_path: '/manage/prometheus'
+    static_configs:
+      - targets: ['host.docker.internal:8090']

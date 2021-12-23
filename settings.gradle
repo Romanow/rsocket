@@ -1,0 +1,4 @@
+rootProject.name = "rsocket"
+
+include "poem-generator"
+include "api-server"
